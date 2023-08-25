@@ -86,8 +86,24 @@ $\lim_{n\rightarrow+\infty}(\frac{-3n^3+4n^2-8n-6}{4n^2+2n})=\frac{-\infty}{4}=-
 
 ![Code](images/1.jpg)
 
-<pre>
+\'''python
+from sympy import *
+import numpy as np
+import matplotlib.pyplot as plt
+n = Symbol("n")
+a = limit((-3*n**3+4*n**2-8*n-6)/(4*n**2+2*n),n,oo)
+print(a) 
+x = np.arange(-50, 50, 1)
+f = (-3*x**3+4*x**2-8*x-6)/(4*x**2+2*x)
+plt.plot(x, f)
+plt.xlabel('Ось х') #Подпись для оси х
+plt.ylabel('Ось y') #Подпись для оси y
+plt.title('Первый график') #Название
+plt.grid(True)
+plt.show()
+\'''
 
+<pre>
 </pre>
 
 <p style="text-align: center;">Иллюстрация решения </p>
