@@ -102,7 +102,7 @@ plt.show()
 
 \```
 
-![Code](images/1.jpg)
+![График:](https://github.com/Rita749/pictures/blob/main/graphic.png)
 
 <pre>
 
